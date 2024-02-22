@@ -1,18 +1,18 @@
 ## Application Details
 |               |
 | ------------- |
-|**Generation Date and Time**<br>Sun Oct 16 2022 00:42:02 GMT+0000 (Coordinated Universal Time)|
+|**Generation Date and Time**<br>22/02/2024|
 |**App Generator**<br>@sap/generator-fiori-freestyle|
 |**App Generator Version**<br>1.7.5|
 |**Generation Platform**<br>SAP Business Application Studio|
 |**Floorplan Used**<br>2listdetail|
 |**Service Type**<br>SAP System (ABAP On Premise)|
-|**Service URL**<br>https://vm71.4hub.cloud:44371/sap/opu/odata/sap/ZPSSILVA_GW_SRV
+|**Service URL**<br>https://ndc-srvhana.opus-idc.com.br:8100/sap/opu/odata/sap/ZPSSILVA_GW_SRV
 |**Module Name**<br>zld_template|
 |**Application Title**<br>Companhias Aéreas|
 |**Namespace**<br>moovi|
-|**UI5 Theme**<br>sap_fiori_3|
-|**UI5 Version**<br>1.96.6|
+|**UI5 Theme**<br>sap_horizon|
+|**UI5 Version**<br>1.102.8|
 |**Enable Code Assist Libraries**<br>False|
 |**Enable TypeScript**<br>False|
 |**Add Eslint configuration**<br>False|
@@ -27,7 +27,7 @@
 
 ## zld_template
 
-List Detail Fiori Freestyle
+Template para List Detail Fiori Freestyle
 
 ### Starting the generated app
 

@@ -15,7 +15,7 @@ builder:
       configuration:
         target:
           destination: MOOVI_S4
-          url: https://vm71.4hub.cloud:44371
+          url: https://ndc-srvhana.opus-idc.com.br:8100
         app:
           name: ZLD_TEMPLATE
           package: ZFIORIF

@@ -182,9 +182,7 @@ sap.ui.define([
          * Set the full screen mode to false and navigate to list page
          */
         onCloseDetailPress: function () {
-            this.getModel("appView").setProperty("/actionButtonsInfo/midColumn/fullScreen", false);
-            // No item should be selected on list after detail page is closed
-            this.getOwnerComponent().oListSelector.clearListListSelection();
+            this.getModel("appView").setProperty("/actionButtonsInfo/midColumn/fullScreen", false);   
             this.getRouter().navTo("list");
         },
 

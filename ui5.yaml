@@ -17,8 +17,8 @@ server:
           url: https://ui5.sap.com
         backend:
           - path: /sap
-            url: https://vm71.4hub.cloud:44371
-            client: '100'
+            url: https://ndc-srvhana.opus-idc.com.br:8100
+            client: '250'
             destination: MOOVI_S4
     - name: fiori-tools-appreload
       afterMiddleware: compression
@@ -30,4 +30,4 @@ server:
       afterMiddleware: fiori-tools-appreload
       configuration:
         component: moovi.zldtemplate
-        ui5Theme: sap_fiori_3
+        ui5Theme: sap_horizon
