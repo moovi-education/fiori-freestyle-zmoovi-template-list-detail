@@ -29,6 +29,31 @@
 
 Template para List Detail Fiori Freestyle
 
+### Alterando nome do template
+
+Após clonar o repositório template é necessário realizar algumas alterações conforme abaixo:
+
+-   No menu Search (ou CTRL + Shift + F) pesquise e substitua todas as ocorrências encontradas de **zldtemplate** para **NOME DO SEU APP**
+-   No menu Search (ou CTRL + Shift + F) pesquise e substitua todas as ocorrências encontradas de **ZLD_TEMPLATE** para **NOME DO SEU APP** (Nome da aplicação BSP que será publicada)
+-   Verifique se o nome da destination esta correto (conforme nome da destination configurado nas aulas anteriores) nos arquivos **.yaml**
+-   Verifique se os nomes informados para as EntitySets e propriedade de navegação estão de acordo com os nomes que definiu em seu serviço oData nos aqruivos abaixo:
+    -   **manifest.json**  - configuração de rota para a Lista principal.(aproximadamente na linha 131)
+    -   **List.view.xml**  - Nome do EntitySet para lista princial (aproximadamente na linha 24) 
+    -   **Detail.view.xml**  - Nome da propriedade de Navigation para os Itens (aproximadamente na linha 25) 
+    
+-   No arquivo **manifest.json** altere a url do serviço oData para o seu serviço oData:
+
+    De:
+
+```
+"uri": "/sap/opu/odata/sap/ZPSSILVA_GW_SRV/"
+```
+    Para:
+
+```
+"uri": "/sap/opu/odata/sap/<<<ZMEUSERVICO_GW_SRV>>>/"
+```
+
 ### Starting the generated app
 
 -   This app has been generated using the SAP Fiori tools - App Generator, as part of the SAP Fiori tools suite.  In order to launch the generated app, simply run the following from the generated app root folder:
