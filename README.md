@@ -40,7 +40,7 @@ Após clonar o repositório template é necessário realizar algumas alteraçõe
     -   **manifest.json**  - configuração de rota para a Lista principal.(aproximadamente na linha 131)
     -   **List.view.xml**  - Nome do EntitySet para lista princial (aproximadamente na linha 24) 
     -   **Detail.view.xml**  - Nome da propriedade de Navigation para os Itens (aproximadamente na linha 25) 
-    
+
 -   No arquivo **manifest.json** altere a url do serviço oData para o seu serviço oData:
 
     De:
@@ -48,7 +48,8 @@ Após clonar o repositório template é necessário realizar algumas alteraçõe
 ```
 "uri": "/sap/opu/odata/sap/ZPSSILVA_GW_SRV/"
 ```
-    Para:
+   
+   Para:
 
 ```
 "uri": "/sap/opu/odata/sap/<<<ZMEUSERVICO_GW_SRV>>>/"
