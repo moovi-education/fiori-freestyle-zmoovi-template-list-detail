@@ -12,7 +12,7 @@ sap.ui.define([
 	"use strict";
 	Opa5.extendConfig({
 		arrangements: new Startup(),
-		viewNamespace: "moovi.zpssilvaapp.view.",
+		viewNamespace: "moovi.zldtemplate.view.",
 		autoWait: true
 	});
 });

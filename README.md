@@ -8,7 +8,7 @@
 |**Floorplan Used**<br>2listdetail|
 |**Service Type**<br>SAP System (ABAP On Premise)|
 |**Service URL**<br>https://vm71.4hub.cloud:44371/sap/opu/odata/sap/ZPSSILVA_GW_SRV
-|**Module Name**<br>zpssilva_app|
+|**Module Name**<br>zld_template|
 |**Application Title**<br>Companhias Aéreas|
 |**Namespace**<br>moovi|
 |**UI5 Theme**<br>sap_fiori_3|
@@ -25,9 +25,9 @@
 |**Line item ID**<br>Cityfrom|
 |**Line item number**<br>Fltime|
 
-## zpssilva_app
+## zld_template
 
-List Detail Fiori Feestyle
+List Detail Fiori Freestyle
 
 ### Starting the generated app
 

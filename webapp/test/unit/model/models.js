@@ -1,7 +1,7 @@
 /*global QUnit*/
 
 sap.ui.define([
-	"moovi/zpssilvaapp/model/models"
+	"moovi/zldtemplate/model/models"
 ], function (models) {
 	"use strict";
 

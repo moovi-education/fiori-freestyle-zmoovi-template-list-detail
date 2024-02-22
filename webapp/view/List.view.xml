@@ -1,5 +1,5 @@
 <mvc:View
-    controllerName="moovi.zpssilvaapp.controller.List"
+    controllerName="moovi.zldtemplate.controller.List"
     xmlns="sap.m"
     xmlns:semantic="sap.f.semantic"
     xmlns:mvc="sap.ui.core.mvc">
@@ -53,14 +53,6 @@
                             </layoutData>
                         </SearchField>
                         <ToolbarSpacer/>
-                        
-                        <Button
-							id="newCompanyBtn"
-                            text="{i18n>btn_new_txt}"
-							press=".onBtnCreatePress" 
-							icon="sap-icon://create"
-							type="Transparent"/>
-
                         <Button
                             id="sortButton"
                             press=".onOpenViewSettings"

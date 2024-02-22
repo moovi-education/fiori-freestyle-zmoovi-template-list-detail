@@ -1,5 +1,5 @@
 <mvc:View
-    controllerName="moovi.zpssilvaapp.controller.App"
+    controllerName="moovi.zldtemplate.controller.App"
     displayBlock="true"
     height="100%"
     xmlns="sap.m"

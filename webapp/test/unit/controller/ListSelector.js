@@ -1,7 +1,7 @@
 /*global QUnit*/
 
 sap.ui.define([
-	"moovi/zpssilvaapp/controller/ListSelector"
+	"moovi/zldtemplate/controller/ListSelector"
 ], function(ListSelector) {
 	"use strict";
 

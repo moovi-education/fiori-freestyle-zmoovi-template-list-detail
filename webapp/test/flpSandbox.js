@@ -40,7 +40,7 @@ sap.ui.define([
 								"tileType": "sap.ushell.ui.tile.StaticTile",
 								"properties": {
 									"title": "Companhias Aéreas",
-									"targetURL": "#moovizpssilvaapp-display"
+									"targetURL": "#moovizldtemplate-display"
 								}
 							}]
 						}]
@@ -51,8 +51,8 @@ sap.ui.define([
 				"adapter": {
 					"config": {
 						"inbounds": {
-							"moovizpssilvaapp-display": {
-								"semanticObject": "moovizpssilvaapp",
+							"moovizldtemplate-display": {
+								"semanticObject": "moovizldtemplate",
 								"action": "display",
 								"description": "List Detail Fiori Feestyle",
 								"title": "Companhias Aéreas",
@@ -61,8 +61,8 @@ sap.ui.define([
 								},
 								"resolutionResult": {
 									"applicationType": "SAPUI5",
-									"additionalInformation": "SAPUI5.Component=moovi.zpssilvaapp",
-									"url": sap.ui.require.toUrl("moovi/zpssilvaapp")
+									"additionalInformation": "SAPUI5.Component=moovi.zldtemplate",
+									"url": sap.ui.require.toUrl("moovi/zldtemplate")
 								}
 							}
 						}

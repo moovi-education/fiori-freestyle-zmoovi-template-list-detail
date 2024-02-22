@@ -8,7 +8,7 @@ sap.ui.define([
 function (UIComponent, Device, models, ListSelector, ErrorHandler) {
     "use strict";
 
-    return UIComponent.extend("moovi.zpssilvaapp.Component", {
+    return UIComponent.extend("moovi.zldtemplate.Component", {
         /**
          * @param {typeof sap.ui.model.json.JSONModel} JSONModel
          * @param {typeof sap.ui.Device} Device

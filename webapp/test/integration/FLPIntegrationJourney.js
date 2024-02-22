@@ -11,7 +11,7 @@ sap.ui.define([
 
 	opaTest("Should open the share menu and display the share buttons on the detail page", function (Given, When, Then) {
 		// Arrangements
-		Given.iStartMyFLPApp({intent : "moovizpssilvaapp-display"});
+		Given.iStartMyFLPApp({intent : "moovizldtemplate-display"});
 
 		// Actions
 		When.onTheMasterPage.iPressOnTheObjectAtPosition(1).

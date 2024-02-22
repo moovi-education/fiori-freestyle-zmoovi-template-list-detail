@@ -1,7 +1,7 @@
 {
     "_version": "1.37.0",
     "sap.app": {
-        "id": "moovi.zpssilvaapp",
+        "id": "moovi.zldtemplate",
         "type": "application",
         "i18n": "i18n/i18n.properties",
         "applicationVersion": {
@@ -28,12 +28,12 @@
         },
         "crossNavigation": {
             "inbounds": {
-                "moovi-zpssilvaapp-inbound": {
+                "moovi-zldtemplate-inbound": {
                     "signature": {
                         "parameters": {},
                         "additionalParameters": "allowed"
                     },
-                    "semanticObject": "zpsilva_app",
+                    "semanticObject": "zld_template",
                     "action": "display",
                     "title": "{{flpTitle}}",
                     "subTitle": "{{flpSubtitle}}",
@@ -81,7 +81,7 @@
             "i18n": {
                 "type": "sap.ui.model.resource.ResourceModel",
                 "settings": {
-                    "bundleName": "moovi.zpssilvaapp.i18n.i18n"
+                    "bundleName": "moovi.zldtemplate.i18n.i18n"
                 }
             },
             "": {
@@ -111,7 +111,7 @@
             "config": {
                 "routerClass": "sap.f.routing.Router",
                 "viewType": "XML",
-                "viewPath": "moovi.zpssilvaapp.view",
+                "viewPath": "moovi.zldtemplate.view",
                 "controlId": "layout",
                 "controlAggregation": "beginColumnPages",
                 "bypassed": {
@@ -134,14 +134,6 @@
                         "list",
                         "object"
                     ]
-                },
-                {
-                    "pattern": "SpfliSet/{Carrid}/{Connid}",
-                    "name": "flightDetail",
-                    "target": [
-                        "list",
-                        "flightDetail"
-                    ]
                 }
             
             ],
@@ -156,13 +148,7 @@
                     "viewId": "detail",
                     "viewLevel": 1,
                     "controlAggregation": "midColumnPages"
-                },
-                "flightDetail": {
-                    "viewName": "FlightDetail",
-                    "viewId": "flightDetail",
-                    "viewLevel": 1,
-                    "controlAggregation": "midColumnPages"
-                },
+                },               
                 "detailObjectNotFound": {
                     "viewName": "DetailObjectNotFound",
                     "viewId": "detailObjectNotFound",
@@ -175,7 +161,7 @@
             }
         },
         "rootView": {
-            "viewName": "moovi.zpssilvaapp.view.App",
+            "viewName": "moovi.zldtemplate.view.App",
             "type": "XML",
             "async": true,
             "id": "app"

@@ -3,5 +3,5 @@ sap.ui.define([
 ], function (BaseController) {
     "use strict";
 
-    return BaseController.extend("moovi.zpssilvaapp.controller.DetailObjectNotFound", {});
+    return BaseController.extend("moovi.zldtemplate.controller.DetailObjectNotFound", {});
 });

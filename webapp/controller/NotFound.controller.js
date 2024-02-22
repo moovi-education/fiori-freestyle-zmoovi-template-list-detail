@@ -3,7 +3,7 @@ sap.ui.define([
 ], function (BaseController) {
     "use strict";
 
-    return BaseController.extend("moovi.zpssilvaapp.controller.NotFound", {
+    return BaseController.extend("moovi.zldtemplate.controller.NotFound", {
 
         onInit: function () {
             this.getRouter().getTarget("notFound").attachDisplay(this._onNotFoundDisplayed, this);

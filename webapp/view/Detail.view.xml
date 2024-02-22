@@ -1,5 +1,5 @@
 <mvc:View
-    controllerName="moovi.zpssilvaapp.controller.Detail"
+    controllerName="moovi.zldtemplate.controller.Detail"
     xmlns="sap.m"
     xmlns:semantic="sap.f.semantic"
     xmlns:mvc="sap.ui.core.mvc">
@@ -33,11 +33,7 @@
                             text="{detailView>/lineItemListTitle}"
                             titleStyle="H3"
                             level="H3"/>
-                         <ToolbarSpacer />
-                        <Button
-                                        icon="sap-icon://create"
-                                        text="{i18n>btn_new_txt}"
-                                        press=".onBtnCreatePress" />      
+                         <ToolbarSpacer />                       
                     </Toolbar>
                 </headerToolbar>
                 <columns>
@@ -73,14 +69,7 @@
             <semantic:SendEmailAction
                 id="shareEmail"
                 press=".onSendEmailPress"/>
-        </semantic:sendEmailAction>
-
-          <semantic:editAction>
-            <semantic:EditAction                 
-                    id="editCompanyBtn"                
-                    press=".onEditCompanyBtnPress"></semantic:EditAction>
-        
-        </semantic:editAction>
+        </semantic:sendEmailAction>     
 
         <semantic:closeAction>
             <semantic:CloseAction

@@ -4,7 +4,7 @@ sap.ui.define([
 ], function(Opa5, ODataModel) {
 	"use strict";
 
-	return Opa5.extend("moovi.zpssilvaapp.test.integration.arrangements.Startup", {
+	return Opa5.extend("moovi.zldtemplate.test.integration.arrangements.Startup", {
 
 		/**
 		 * Initializes mock server, then starts the app component
@@ -24,7 +24,7 @@ sap.ui.define([
 			// start the app UI component
 			this.iStartMyUIComponent({
 				componentConfig: {
-					name: "moovi.zpssilvaapp",
+					name: "moovi.zldtemplate",
 					async: true
 				},
 				hash: oOptions.hash,

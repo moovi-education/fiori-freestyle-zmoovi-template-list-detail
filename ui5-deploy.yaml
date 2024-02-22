@@ -2,7 +2,7 @@
 
 specVersion: "2.5"
 metadata:
-  name: moovi.zpssilvaapp
+  name: moovi.zldtemplate
 type: application
 builder:
   resources:
@@ -17,6 +17,6 @@ builder:
           destination: MOOVI_S4
           url: https://vm71.4hub.cloud:44371
         app:
-          name: ZPSILVA_APP
+          name: ZLD_TEMPLATE
           package: ZFIORIF
           transport: S4MK900006

@@ -2,7 +2,7 @@
 
 specVersion: "2.5"
 metadata:
-  name: moovi.zpssilvaapp
+  name: moovi.zldtemplate
 type: application
 server:
   customMiddleware:

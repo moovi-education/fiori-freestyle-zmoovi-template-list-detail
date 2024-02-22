@@ -4,7 +4,7 @@ sap.ui.define([
 ], function (BaseController, JSONModel) {
     "use strict";
 
-    return BaseController.extend("moovi.zpssilvaapp.controller.App", {
+    return BaseController.extend("moovi.zldtemplate.controller.App", {
 
         onInit : function () {
             var oViewModel,

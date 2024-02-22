@@ -13,7 +13,7 @@ sap.ui.define([
 ], function (BaseController, JSONModel, Filter, Sorter, FilterOperator, GroupHeaderListItem, Device, Fragment, formatter, MessageToast, MessageBox) {
     "use strict";
 
-    return BaseController.extend("moovi.zpssilvaapp.controller.List", {
+    return BaseController.extend("moovi.zldtemplate.controller.List", {
 
         formatter: formatter,
 
@@ -133,7 +133,7 @@ sap.ui.define([
             if (!this.byId("viewSettingsDialog")) {
                 Fragment.load({
                     id: this.getView().getId(),
-                    name: "moovi.zpssilvaapp.view.ViewSettingsDialog",
+                    name: "moovi.zldtemplate.view.ViewSettingsDialog",
                     controller: this
                 }).then(function (oDialog) {
                     // connect dialog to the root view of this component (models, lifecycle)
@@ -304,131 +304,7 @@ sap.ui.define([
             var oViewModel = this.getModel("listView");
             oViewModel.setProperty("/isFilterBarVisible", (this._oListFilterState.aFilter.length > 0));
             oViewModel.setProperty("/filterBarLabel", this.getResourceBundle().getText("listFilterBarText", [sFilterBarText]));
-        },
-
-
-        //Evento de acao do Botao novo
-        onBtnCreatePress: function (oEvent) {
-
-            this._initNewCompany();
-
-
-            if (!this.oDialogEditCompany) {
-
-                this.oDialogEditCompany = Fragment.load({
-                    id: this.getView().getId(),
-                    name: "moovi.zpssilvaapp.view.EditCompanyDialog",
-                    controller: this
-                }).then(function (oDialog) {
-                    // connect dialog to the root view of this component (models, lifecycle)
-                    this.getView().addDependent(oDialog);
-                    oDialog.addStyleClass(this.getOwnerComponent().getContentDensityClass());
-                    this.oDialogEditCompany = oDialog;
-                    this.oDialogEditCompany.open();
-                }.bind(this));
-
-            } else {
-                this.oDialogEditCompany.open();
-            }
-
-        },
-
-        _initNewCompany: function () {
-            var oEditModel = this.getView().getModel("editCompanyModel");
-            oEditModel.setProperty("/isNew", true);
-
-            var oModel = this.getView().getModel();
-
-            oModel.setDeferredGroups(["creategroupId"]);
-            oModel.setChangeGroups({
-                "ScarrSet": {
-                    groupId: "creategroupId",
-                    changeSetId: "ID"
-                }
-            });
-
-            var oContext = oModel.createEntry("/ScarrSet", {
-                groupId: "creategroupId",
-                properties: {}
-            });
-
-            var oView = this.getView();
-            oView.bindElement(oContext.getPath());
-
-        },
-
-        onSaveCompanyButtonPress: function (oEvent) {
-            var oModel = this.getView().getModel();
-
-            oModel.submitChanges({
-                success: this.handleSuccessSave.bind(this),
-                error: this.handleSaveError.bind(this),
-            });
-
-        },
-        onCancelNewCompany: function (oEvent) {
-            var oModel = this.getView().getModel();
-            oModel.resetChanges();
-
-            this.oDialogEditCompany.close();
-        },
-        handleSuccessSave: function (oRes, oData) {
-
-            var oModel = this.getView().getModel();
-            if (oRes.__batchResponses) {
-
-                if (oRes.__batchResponses[0].response) {
-                    var status = parseInt(oRes.__batchResponses[0].response.statusCode);
-
-                    if (status >= 400) {
-
-                        var oResponseBody = JSON.parse(oRes.__batchResponses[0].response.body);
-                        oModel.resetChanges();
-                        oModel.refresh();
-
-                    } else {
-                        MessageToast.show("Salvo com sucesso!");
-                        this.oDialogEditCompany.close();
-
-                    }
-                } else if (oRes.__batchResponses[0].__changeResponses) {
-                    var aChangeRes = oRes.__batchResponses[0].__changeResponses;
-
-                    var status = parseInt(aChangeRes[0].statusCode);
-
-                    if (status >= 400) {
-
-                        MessageBox.alert("Erro ao Salvar");
-                        oModel.resetChanges();
-                        oModel.refresh();
-
-                    } else {
-                        MessageToast.show("Salvo com sucesso!");
-                        this.oDialogEditCompany.close();
-
-                    }
-
-                }
-
-
-            } else {
-                MessageToast.show("Salvo com sucesso!");
-                this.oDialogEditCompany.close();
-            }
-
-        },
-
-        handleSaveError: function (oError) {
-            if (oError) {
-                if (oError.responseText) {
-                    var oErrorMessage = JSON.parse(oError.responseText);
-                    MessageBox.alert(oErrorMessage.error.message.value);
-                }
-            }
         }
-
-
-
 
 
     });

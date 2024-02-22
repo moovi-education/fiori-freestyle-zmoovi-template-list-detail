@@ -2,7 +2,7 @@
 
 sap.ui.define([
 	"sap/m/Text",
-	"moovi/zpssilvaapp/model/formatter"
+	"moovi/zldtemplate/model/formatter"
 ], function (Text, formatter) {
 	"use strict";
 

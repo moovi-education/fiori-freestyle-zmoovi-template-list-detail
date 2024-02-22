@@ -1,5 +1,5 @@
 <mvc:View
-    controllerName="moovi.zpssilvaapp.controller.DetailObjectNotFound"
+    controllerName="moovi.zldtemplate.controller.DetailObjectNotFound"
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc">
 
